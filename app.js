@@ -85,7 +85,7 @@ var fs = require('fs');
 // });
 //
 // server.listen(3000, '127.0.0.1');
-// console.log('connecting client..');
+
 var express = require('express');
 var app = express();
 
@@ -96,3 +96,4 @@ app.get('/contact', function(req, res){
   res.sendFile(__dirname + '/contact.html')
 });
 app.listen(3000);
+console.log('connecting client..');
